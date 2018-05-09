@@ -1,0 +1,4 @@
+name: "Module Hero"
+description: "We are going to create a module"
+type: module
+core: 8.x
