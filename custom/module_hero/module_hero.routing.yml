@@ -1,0 +1,7 @@
+module_hero.heroList:
+  path: '/herolist'
+  defaults:
+    _controller: '\Drupal\module_hero\Controller\HeroController::herolist'
+    _title: 'Our super Heroes  list appear on top'
+  requirements:
+    _permission: 'access content'    
