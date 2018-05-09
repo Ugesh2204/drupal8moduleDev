@@ -2,10 +2,12 @@
 
 namespace Drupal\module_hero\Controller;
 
+use Drupal\Core\Controller\ControllerBase;
+
 /**
  * This is our hero controller
  */
-class HeroController {
+class HeroController extends ControllerBase{
 
     public function heroList() {
         /*Turn into array */
@@ -30,7 +32,7 @@ class HeroController {
 
         return [
             '#type' => 'markup',
-            '#markup' => '<ol>'. $ourHeroes . '</ol>',
+            '#markup' => '<h4>' . $this->t('These are the best voted heroes') .'<h4><ol>'. $ourHeroes . '</ol>',
 
         ];
     }
